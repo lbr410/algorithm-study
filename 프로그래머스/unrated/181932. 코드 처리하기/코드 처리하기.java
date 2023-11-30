@@ -25,7 +25,7 @@ class Solution {
         			}
         		}
         	}
-        	arr[i] = code.charAt(i);
+        	
         }
         
         if(answer.equals("")) {
