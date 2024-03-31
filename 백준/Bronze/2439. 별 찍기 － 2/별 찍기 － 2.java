@@ -13,7 +13,7 @@ class Main {
                 space += " ";
             }
             star += "*";
-            System.out.println(space+star+"");
+            System.out.println(space+star);
         }
 	}
 }
