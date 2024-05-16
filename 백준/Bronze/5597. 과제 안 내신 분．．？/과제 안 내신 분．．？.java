@@ -2,31 +2,18 @@ import java.io.*;
 
 class Main {
 	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+		boolean students[] = new boolean[31];
 		
-		int arr[] = new int[28];
-		int arr2[] = new int[30];
-		
-		for(int i=0; i<arr.length; i++) {
-			arr[i] = Integer.parseInt(br.readLine());
+		for(int i=0; i<28; i++) {
+			int submitted = Integer.parseInt(br.readLine());
+			students[submitted] = true;
 		}
 		
-		for(int i=0; i<arr2.length; i++) {
-			arr2[i] = i+1;
-		}
-		
-		for(int i=0; i<arr2.length; i++) {
-			for(int j=0; j<arr.length; j++) {
-				if(arr2[i] == arr[j]) {
-					arr2[i] = 0;
-					break;
-				}
-			}
-		}
-		
-		for(int i=0; i<arr2.length; i++) {
-			if(arr2[i] != 0) {
-				System.out.println(arr2[i]);
+		for(int i=1; i<=30; i++) {
+			if(!students[i]) {
+				System.out.println(i);
 			}
 		}
 	}
