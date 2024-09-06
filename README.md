@@ -4,4 +4,4 @@ This is a auto push repository for Baekjoon Online Judge created with [BaekjoonH
 
 
 
-Algorithm for JAVA! ✨1일1코테✨ 실천하기 :)
+✨1일1코테✨ 실천하기 :)
